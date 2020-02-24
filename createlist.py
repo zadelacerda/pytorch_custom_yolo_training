@@ -3,10 +3,10 @@ import os
 import numpy as np
 import sys
 
-current_dir = "./data/artifacts/images"
-split_pct = 10;
-file_train = open("data/artifacts/train.txt", "w")  
-file_val = open("data/artifacts/val.txt", "w")  
+current_dir = "./find_phone"
+split_pct = 10 # 10% validation set
+file_train = open("train.txt", "w")  
+file_val = open("val.txt", "w")  
 counter = 1  
 index_test = round(100 / split_pct)  
 for pathAndFilename in glob.iglob(os.path.join(current_dir, "*.jpg")):  
